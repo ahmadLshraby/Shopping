@@ -18,11 +18,18 @@ class CategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return DataServices.instance.getCategories().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as? CategoryCell {
+            let category = DataServices.instance.getCategories()[indexPath.row] // get data from dataService array []
+            cell.updateView(category: category) // pass the data we got to updateView of cell func
+            return cell
+        }else {
+            return CategoryCell()
+        }
+        
     }
 
 
