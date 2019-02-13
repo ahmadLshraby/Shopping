@@ -17,6 +17,7 @@ class CategoryCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setupCell()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,6 +29,25 @@ class CategoryCell: UITableViewCell {
     func updateView(category: Category)  {
         categoryLbl.text = category.title
         categoryImg.image = UIImage(named: category.imageName)
+    }
+    
+    func setupCell() {
+        // define limitation for the motion
+        let min = CGFloat(-50)
+        let max = CGFloat(50)
+        // define motion when tilting the device
+        let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
+        xMotion.minimumRelativeValue = min
+        xMotion.maximumRelativeValue = max
+        
+        let yMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.y", type: .tiltAlongVerticalAxis)
+        yMotion.minimumRelativeValue = min
+        yMotion.maximumRelativeValue = max
+        // add motion to image view as a group not induvidual
+        let motionEffectGroup = UIMotionEffectGroup()
+        motionEffectGroup.motionEffects = [xMotion, yMotion]
+        
+        categoryImg.addMotionEffect(motionEffectGroup)
     }
 
 }
