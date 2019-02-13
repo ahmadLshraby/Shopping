@@ -17,6 +17,8 @@
 		04B7C7FE221385410055F5EE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C7FD221385410055F5EE /* DataService.swift */; };
 		04B7C800221394640055F5EE /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C7FF221394640055F5EE /* ProductCell.swift */; };
 		04B7C802221395640055F5EE /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C801221395640055F5EE /* Product.swift */; };
+		04B7C80422139B310055F5EE /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C80322139B310055F5EE /* ProductVC.swift */; };
+		04B7C80722139B6C0055F5EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C80622139B6C0055F5EE /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		04B7C7FD221385410055F5EE /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		04B7C7FF221394640055F5EE /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		04B7C801221395640055F5EE /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		04B7C80322139B310055F5EE /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		04B7C80622139B6C0055F5EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		04B7C7E222137D460055F5EE /* Shopping */ = {
 			isa = PBXGroup;
 			children = (
+				04B7C80522139B560055F5EE /* Constants */,
 				04B7C7FC2213850C0055F5EE /* Services */,
 				04B7C7F72213811F0055F5EE /* View */,
 				04B7C7F6221380DF0055F5EE /* Model */,
@@ -81,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				04B7C7E522137D460055F5EE /* CategoryVC.swift */,
+				04B7C80322139B310055F5EE /* ProductVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -109,6 +115,14 @@
 				04B7C7FD221385410055F5EE /* DataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		04B7C80522139B560055F5EE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C80622139B6C0055F5EE /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,9 +200,11 @@
 				04B7C7E422137D460055F5EE /* AppDelegate.swift in Sources */,
 				04B7C7F92213815B0055F5EE /* CategoryCell.swift in Sources */,
 				04B7C800221394640055F5EE /* ProductCell.swift in Sources */,
+				04B7C80422139B310055F5EE /* ProductVC.swift in Sources */,
 				04B7C7FB2213837D0055F5EE /* Category.swift in Sources */,
 				04B7C7FE221385410055F5EE /* DataService.swift in Sources */,
 				04B7C802221395640055F5EE /* Product.swift in Sources */,
+				04B7C80722139B6C0055F5EE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

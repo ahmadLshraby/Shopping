@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="860" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductVC-->
         <scene sceneID="fLN-3F-dPb">
             <objects>
-                <viewController id="2c5-VC-Of4" sceneMemberID="viewController">
+                <viewController id="2c5-VC-Of4" customClass="ProductVC" customModule="Shopping" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pXS-UT-edb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +183,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ROK-mr-PDW"/>
                     </view>
+                    <connections>
+                        <outlet property="productCollection" destination="l7n-Pq-XJo" id="3H3-D8-WTw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uah-VG-aHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
