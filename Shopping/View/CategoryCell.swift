@@ -33,8 +33,8 @@ class CategoryCell: UITableViewCell {
     
     func setupCell() {
         // define limitation for the motion
-        let min = CGFloat(-50)
-        let max = CGFloat(50)
+        let min = CGFloat(-30)
+        let max = CGFloat(30)
         // define motion when tilting the device
         let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
         xMotion.minimumRelativeValue = min
